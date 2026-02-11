@@ -9,7 +9,7 @@ plugins {
     alias(libs.plugins.gradle.maven.publish)
 }
 
-group = "dev.vicart.compose.material.symbols"
+group = "dev.vicart"
 version = "1.0.0"
 
 kotlin {

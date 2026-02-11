@@ -1,7 +1,9 @@
 package dev.vicart.compose.material.symbols
 
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -12,6 +14,7 @@ fun FilledSymbol(
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
+    tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
 ) {
     Symbol(
@@ -20,7 +23,9 @@ fun FilledSymbol(
         size = size,
         grade = grade,
         style = SymbolStyle.OUTLINED,
-        filled = true
+        filled = true,
+        tint = tint,
+        modifier = modifier
     )
 }
 
@@ -30,6 +35,7 @@ fun FilledSharpSymbol(
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
+    tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
 ) {
     Symbol(
@@ -38,7 +44,9 @@ fun FilledSharpSymbol(
         size = size,
         grade = grade,
         style = SymbolStyle.SHARP,
-        filled = true
+        filled = true,
+        tint = tint,
+        modifier = modifier
     )
 }
 
@@ -48,6 +56,7 @@ fun FilledRoundedSymbol(
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
+    tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
 ) {
     Symbol(
@@ -56,6 +65,8 @@ fun FilledRoundedSymbol(
         size = size,
         grade = grade,
         style = SymbolStyle.ROUNDED,
-        filled = true
+        filled = true,
+        tint = tint,
+        modifier = modifier
     )
 }

@@ -1,8 +1,10 @@
 package dev.vicart.compose.material.symbols
 
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
@@ -16,6 +18,7 @@ internal fun Symbol(
     weight: FontWeight,
     grade: Float = 0f,
     style: SymbolStyle,
+    tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
 ) {
     val fontFamily = rememberMaterialSymbolFontFamily(
@@ -30,6 +33,7 @@ internal fun Symbol(
         text = icon,
         modifier = modifier,
         fontFamily = fontFamily,
-        fontSize = with(LocalDensity.current) { size.toSp() }
+        fontSize = with(LocalDensity.current) { size.toSp() },
+        color = tint
     )
 }
