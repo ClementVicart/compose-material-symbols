@@ -1,7 +1,7 @@
 # Compose Material Symbols
 
 This library is a **Compose Multiplatform** library that aims to facilitate the use of
-the new [Material Symbols](https://fonts.google.com/icons), as the compose icons libraries
+the new [Google's Material Symbols](https://fonts.google.com/icons), as the old compose icons libraries
 (`material-icons-[extended]`) are now deprecated.
 
 ## Table of contents
