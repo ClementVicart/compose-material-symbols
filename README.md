@@ -52,7 +52,7 @@ Will display a red bold "close" symbol ( `X` ), with a size of 32dp
 kotlin {
     sourceSets {
         commonMain.dependencies {
-            implementation("dev.vicart:compose-material-symbols:1.0.0")
+            implementation("dev.vicart:compose-material-symbols:1.0.1")
         }
     }
 }
@@ -62,6 +62,6 @@ kotlin {
 
 ```kotlin
 dependencies {
-    implementation("dev.vicart:compose-material-symbols:1.0.0")
+    implementation("dev.vicart:compose-material-symbols:1.0.1")
 }
 ```
