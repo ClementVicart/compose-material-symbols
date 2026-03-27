@@ -19,7 +19,7 @@ kotlin {
         }
     }
 
-    androidLibrary {
+    android {
         compileSdk = libs.versions.compileSdk.get().toInt()
         namespace = "dev.vicart.compose.material.symbols"
 
