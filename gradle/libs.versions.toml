@@ -1,6 +1,6 @@
 [versions]
+agp = "9.2.0"
 kotlin = "2.3.21"
-agp = "9.1.0"
 compileSdk = "36"
 material3 = "1.10.0-alpha05"
 compose = "1.10.3"
