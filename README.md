@@ -22,7 +22,7 @@ styles of Material Symbols. They all take the same parameters:
 ```kotlin
 @Composable
 <Filled/Outlined>[Sharp/Rounded]Symbol(
-    icon: String, // The name of the symbol
+    icon: String, // The name of the symbol, available in MaterialSymbols object
     weight: FontWeight, // The weight of the symbol,
     size: Dp, // The size of the symbol, defaults to 24dp,
     grade: Float, // The grade of the symbol, defaults to 0f
@@ -36,7 +36,7 @@ Example:
 ```kotlin
 @Composable
 FilledSymbol(
-    icon = "close",
+    icon = MaterialSymbols.CLOSE,
     weight = FontWeight.Bold,
     size = 32.dp,
     tint = MaterialTheme.colorScheme.error

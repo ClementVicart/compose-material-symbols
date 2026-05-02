@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.jetbrains.compose)
     alias(libs.plugins.gradle.maven.publish)
+    id("dev.vicart.compose.material.symbols")
 }
 
 group = "dev.vicart"
