@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.0"
 kotlin = "2.3.21"
-compileSdk = "36"
+compileSdk = "37"
 material3 = "1.10.0-alpha05"
 compose = "1.10.3"
 publish = "0.36.0"
