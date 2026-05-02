@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "dev.vicart"
-version = "1.0.2"
+version = "1.1.0"
 
 kotlin {
     jvm {
