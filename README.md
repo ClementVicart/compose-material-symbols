@@ -1,3 +1,4 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/dev.vicart/compose-material-symbols)
 # Compose Material Symbols
 
 This library is a **Compose Multiplatform** library that aims to facilitate the use of
@@ -52,7 +53,7 @@ Will display a red bold "close" symbol ( `X` ), with a size of 32dp
 kotlin {
     sourceSets {
         commonMain.dependencies {
-            implementation("dev.vicart:compose-material-symbols:1.0.1")
+            implementation("dev.vicart:compose-material-symbols:1.1.0")
         }
     }
 }
@@ -62,6 +63,6 @@ kotlin {
 
 ```kotlin
 dependencies {
-    implementation("dev.vicart:compose-material-symbols:1.0.1")
+    implementation("dev.vicart:compose-material-symbols:1.1.0")
 }
 ```
