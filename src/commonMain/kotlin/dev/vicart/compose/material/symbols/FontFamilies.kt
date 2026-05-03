@@ -46,7 +46,8 @@ internal fun rememberMaterialSymbolFontFamily(
     val font = key(fontResource, variationSettings) {
         Font(
             resource = fontResource,
-            variationSettings = variationSettings
+            variationSettings = variationSettings,
+            weight = wght
         )
     }
 
