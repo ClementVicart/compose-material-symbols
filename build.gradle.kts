@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "dev.vicart"
-version = "1.1.1"
+version = "1.1.2"
 
 kotlin {
     jvm {
@@ -51,6 +51,9 @@ kotlin {
 
         binaries.library()
     }
+
+    iosX64()
+    iosArm64()
 
     sourceSets {
         commonMain.dependencies {
