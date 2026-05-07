@@ -45,6 +45,9 @@ FilledSymbol(
 ```
 Will display a red bold "close" symbol ( `X` ), with a size of 32dp
 
+> [!TIP]
+> Compose Material Symbols is based on font files (.ttf) that are packed into the library binaries. When working with custom build logic that affects the resulting resources structure, make sure these files are included in your final binary, otherwise they won't show up
+
 ## Dependency
 
 ### Kotlin Multiplatform
