@@ -28,7 +28,7 @@ internal fun Symbol(
     val fontFamily = rememberMaterialSymbolFontFamily(
         wght = weight,
         fill = filled,
-        opsz = with(LocalDensity.current) { size.toPx() },
+        opsz = size.value,
         grad = grade,
         style = style
     )
