@@ -40,7 +40,7 @@ internal fun Symbol(
         style = TextStyle(
             color = tint,
             fontFamily = fontFamily,
-            fontSize = (size.value * 3f / 4f).sp, //Icon size value is 3/4 bigger than font size for the same real rendering
+            fontSize = with(LocalDensity.current) { size.toSp() },
             fontWeight = weight,
             lineHeightStyle = LineHeightStyle(
                 alignment = LineHeightStyle.Alignment.Center,
