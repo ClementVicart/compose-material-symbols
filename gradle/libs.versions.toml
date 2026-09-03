@@ -3,7 +3,7 @@ agp = "9.2.1"
 kotlin = "2.4.0"
 compileSdk = "37"
 material3 = "1.11.0-alpha07"
-compose = "1.11.1"
+compose = "1.12.0"
 publish = "0.37.0"
 
 [libraries]
