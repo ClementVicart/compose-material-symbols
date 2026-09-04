@@ -8,6 +8,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Outlined",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun OutlinedSymbol(
     icon: String,
@@ -16,19 +23,15 @@ fun OutlinedSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.OUTLINED,
-        filled = false,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Outlined(icon, weight, size, grade, tint, modifier)
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Outlined.Sharp",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun OutlinedSharpSymbol(
     icon: String,
@@ -37,19 +40,15 @@ fun OutlinedSharpSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.SHARP,
-        filled = false,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Outlined.Sharp(icon, weight, size, grade, tint, modifier)
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Outlined.Rounded",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun OutlinedRoundedSymbol(
     icon: String,
@@ -58,15 +57,4 @@ fun OutlinedRoundedSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.ROUNDED,
-        filled = false,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Outlined.Rounded(icon, weight, size, grade, tint, modifier)

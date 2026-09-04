@@ -12,7 +12,7 @@ import dev.vicart.compose.material.symbols.resources.material_symbols_rounded
 import dev.vicart.compose.material.symbols.resources.material_symbols_sharp
 import org.jetbrains.compose.resources.Font
 
-internal enum class SymbolStyle {
+enum class SymbolStyle {
     ROUNDED,
     SHARP,
     OUTLINED

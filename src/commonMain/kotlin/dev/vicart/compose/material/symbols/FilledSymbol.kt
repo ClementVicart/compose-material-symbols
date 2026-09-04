@@ -8,6 +8,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Filled",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun FilledSymbol(
     icon: String,
@@ -16,19 +23,15 @@ fun FilledSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.OUTLINED,
-        filled = true,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Filled(icon, weight, size, grade, tint, modifier)
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Filled.Sharp",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun FilledSharpSymbol(
     icon: String,
@@ -37,19 +40,15 @@ fun FilledSharpSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.SHARP,
-        filled = true,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Filled.Sharp(icon, weight, size, grade, tint, modifier)
 
+@Deprecated(
+    message = "Deprecated in favor of MaterialSymbol base object",
+    replaceWith = ReplaceWith(
+        expression = "MaterialSymbol.Filled.Rounded",
+        "dev.vicart.compose.material.symbols.MaterialSymbol"
+    )
+)
 @Composable
 fun FilledRoundedSymbol(
     icon: String,
@@ -58,15 +57,4 @@ fun FilledRoundedSymbol(
     grade: Float = 0f,
     tint: Color = LocalContentColor.current,
     modifier: Modifier = Modifier
-) {
-    Symbol(
-        icon = icon,
-        weight = weight,
-        size = size,
-        grade = grade,
-        style = SymbolStyle.ROUNDED,
-        filled = true,
-        tint = tint,
-        modifier = modifier
-    )
-}
+) = MaterialSymbol.Filled.Rounded(icon, weight, size, grade, tint, modifier)
