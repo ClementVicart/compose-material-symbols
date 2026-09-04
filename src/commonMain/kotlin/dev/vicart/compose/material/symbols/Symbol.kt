@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-internal fun Symbol(
+fun Symbol(
     icon: String,
     size: Dp = 24.dp,
     filled: Boolean,
