@@ -8,9 +8,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup:kotlinpoet:2.3.0")
+    implementation("com.squareup:kotlinpoet:2.4.0")
     implementation(libs.kotlin.multiplatform)
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.13.0")
 }
 
 gradlePlugin {
