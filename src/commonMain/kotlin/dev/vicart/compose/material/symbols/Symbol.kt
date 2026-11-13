@@ -13,6 +13,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+private const val FONT_PADDING_RATIO = 1.2f
+
 @Composable
 fun Symbol(
     icon: String,
@@ -40,11 +42,11 @@ fun Symbol(
         style = TextStyle(
             color = tint,
             fontFamily = fontFamily,
-            fontSize = with(LocalDensity.current) { size.toSp() },
+            fontSize = with(LocalDensity.current) { (size.value / FONT_PADDING_RATIO).dp.toSp() },
             fontWeight = weight,
             lineHeightStyle = LineHeightStyle(
                 alignment = LineHeightStyle.Alignment.Center,
-                trim = LineHeightStyle.Trim.None
+                trim = LineHeightStyle.Trim.Both
             )
         )
     )
