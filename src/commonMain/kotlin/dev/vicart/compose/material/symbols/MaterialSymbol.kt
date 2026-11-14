@@ -14,7 +14,7 @@ object MaterialSymbol {
 
         @Composable
         fun Sharp(
-            icon: String,
+            icon: SymbolIcon,
             weight: FontWeight = FontWeight.Normal,
             size: Dp = 24.dp,
             grade: Float = 0f,
@@ -35,7 +35,7 @@ object MaterialSymbol {
 
         @Composable
         fun Rounded(
-            icon: String,
+            icon: SymbolIcon,
             weight: FontWeight = FontWeight.Normal,
             size: Dp = 24.dp,
             grade: Float = 0f,
@@ -57,7 +57,7 @@ object MaterialSymbol {
 
     @Composable
     fun Filled(
-        icon: String,
+        icon: SymbolIcon,
         weight: FontWeight = FontWeight.Normal,
         size: Dp = 24.dp,
         grade: Float = 0f,
@@ -80,7 +80,7 @@ object MaterialSymbol {
 
         @Composable
         fun Sharp(
-            icon: String,
+            icon: SymbolIcon,
             weight: FontWeight = FontWeight.Normal,
             size: Dp = 24.dp,
             grade: Float = 0f,
@@ -101,7 +101,7 @@ object MaterialSymbol {
 
         @Composable
         fun Rounded(
-            icon: String,
+            icon: SymbolIcon,
             weight: FontWeight = FontWeight.Normal,
             size: Dp = 24.dp,
             grade: Float = 0f,
@@ -123,7 +123,7 @@ object MaterialSymbol {
 
     @Composable
     fun Outlined(
-        icon: String,
+        icon: SymbolIcon,
         weight: FontWeight = FontWeight.Normal,
         size: Dp = 24.dp,
         grade: Float = 0f,

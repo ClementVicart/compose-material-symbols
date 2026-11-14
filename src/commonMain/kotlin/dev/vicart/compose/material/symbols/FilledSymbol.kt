@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 )
 @Composable
 fun FilledSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
@@ -34,7 +34,7 @@ fun FilledSymbol(
 )
 @Composable
 fun FilledSharpSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
@@ -51,7 +51,7 @@ fun FilledSharpSymbol(
 )
 @Composable
 fun FilledRoundedSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
