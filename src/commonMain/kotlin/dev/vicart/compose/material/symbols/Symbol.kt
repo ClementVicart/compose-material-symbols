@@ -4,6 +4,7 @@ import androidx.compose.foundation.text.BasicText
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
@@ -37,7 +38,7 @@ fun Symbol(
     BasicText(
         text = icon.symbolName,
         maxLines = 1,
-        modifier = modifier,
+        modifier = modifier.scale(FONT_PADDING_RATIO),
         style = TextStyle(
             color = tint,
             fontFamily = fontFamily,
