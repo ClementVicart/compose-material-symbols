@@ -11,13 +11,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 private const val FONT_PADDING_RATIO = 1.2f
 
 @Composable
 fun Symbol(
-    icon: String,
+    icon: SymbolIcon,
     size: Dp = 24.dp,
     filled: Boolean,
     weight: FontWeight,
@@ -36,7 +35,7 @@ fun Symbol(
     )
 
     BasicText(
-        text = icon,
+        text = icon.symbolName,
         maxLines = 1,
         modifier = modifier,
         style = TextStyle(

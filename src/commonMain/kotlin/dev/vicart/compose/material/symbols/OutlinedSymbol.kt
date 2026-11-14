@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 )
 @Composable
 fun OutlinedSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
@@ -34,7 +34,7 @@ fun OutlinedSymbol(
 )
 @Composable
 fun OutlinedSharpSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,
@@ -51,7 +51,7 @@ fun OutlinedSharpSymbol(
 )
 @Composable
 fun OutlinedRoundedSymbol(
-    icon: String,
+    icon: SymbolIcon,
     weight: FontWeight = FontWeight.Normal,
     size: Dp = 24.dp,
     grade: Float = 0f,

@@ -1,11 +1,11 @@
 package dev.vicart.compose.material.symbols.tasks
 
+import com.squareup.kotlinpoet.ClassName
 import com.squareup.kotlinpoet.FileSpec
-import com.squareup.kotlinpoet.KModifier
+import com.squareup.kotlinpoet.FunSpec
 import com.squareup.kotlinpoet.PropertySpec
 import com.squareup.kotlinpoet.TypeSpec
 import dev.vicart.compose.material.symbols.model.FontMetadata
-import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.DirectoryProperty
@@ -29,7 +29,6 @@ abstract class GenerateSymbolNameTask : DefaultTask() {
         description = "Generate symbol enums"
     }
 
-    @OptIn(ExperimentalSerializationApi::class)
     @TaskAction
     fun execute() {
         val connection = URI.create(url).toURL().openConnection()
@@ -44,11 +43,17 @@ abstract class GenerateSymbolNameTask : DefaultTask() {
 
         val symbolIcons = icons.filter { !it.unsupported_families.contains("Material Symbols") }
             .distinctBy { it.name }
+
+        val symbolIconClassName = ClassName("dev.vicart.compose.material.symbols", "SymbolIcon")
+
         val rootObj = TypeSpec.objectBuilder("MaterialSymbols").apply {
             symbolIcons.forEach {
-                addProperty(PropertySpec.builder(it.name.uppercase(), String::class)
-                    .addModifiers(KModifier.CONST)
-                    .initializer("%S", it.name.lowercase())
+                addProperty(
+                    PropertySpec.builder(it.name.uppercase(), symbolIconClassName)
+                    .getter(
+                        FunSpec.getterBuilder()
+                        .addStatement("return %T(%S)", symbolIconClassName, it.name.lowercase())
+                        .build())
                     .build())
             }
         }
